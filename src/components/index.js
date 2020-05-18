@@ -1,0 +1,5 @@
+export { default as Index } from './layout/Master'
+export { default as NavBar } from './layout/NavBar'
+export { default as Footer } from './layout/Footer'
+export { default as Spinner } from './layout/Spinner'
+export { default as NotFoundPage } from './layout/NotFoundPage'
