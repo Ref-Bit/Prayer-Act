@@ -1,0 +1,32 @@
+{
+  "translations":{
+    "lang": "English",
+    "langs": "Language",
+    "day": "Day",
+    "date": "Date",
+    "imsak": "Imsak",
+    "fajr": "Fajr",
+    "sunrise": "Sunrise",
+    "dhuhr": "Dhuhr",
+    "asr": "Asr",
+    "maghrib": "Maghrib",
+    "isha": "Isha",
+    "midnight": "Midnight",
+    "gregorian": "Gregorian Calender For ",
+    "hijri": "Hijri Calender For ",
+    "months": {
+      "1": "January",
+      "2": "February",
+      "3": "March",
+      "4": "April",
+      "5": "May",
+      "6": "June",
+      "7": "July",
+      "8": "August",
+      "9": "September",
+      "10": "October",
+      "11": "Novmber",
+      "12": "December"
+    }
+  }
+}
