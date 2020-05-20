@@ -19,7 +19,7 @@ i18n
     /* When react i18next not finding any language to as default in borwser */
     fallbackLng: "en",
     /* debugger For Development environment */
-    debug: true,
+    debug: false,
     ns: ["translations"],
     defaultNS: "translations",
     keySeparator: ".",

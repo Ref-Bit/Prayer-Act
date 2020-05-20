@@ -1,7 +1,11 @@
 {
   "translations":{
-    "lang": "English",
+    "en": "English",
+    "ar": "Arabic",
     "langs": "Language",
+    "home":{
+     "title" :"In the name of Allah, the Compassionate, the Merciful"
+    },
     "day": "Day",
     "date": "Date",
     "imsak": "Imsak",
@@ -12,21 +16,40 @@
     "maghrib": "Maghrib",
     "isha": "Isha",
     "midnight": "Midnight",
-    "gregorian": "Gregorian Calender For ",
-    "hijri": "Hijri Calender For ",
-    "months": {
-      "1": "January",
-      "2": "February",
-      "3": "March",
-      "4": "April",
-      "5": "May",
-      "6": "June",
-      "7": "July",
-      "8": "August",
-      "9": "September",
-      "10": "October",
-      "11": "Novmber",
-      "12": "December"
+    "gregorian":{
+      "title":"Gregorian Calender For ",
+      "months": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "Novmber",
+        "12": "December"
+      }
+    }, 
+      
+    "hijri": {
+     "title": "Hijri Calender For ",
+     "months": {
+      "1": "Muḥarram",
+      "2": "Ṣafar",
+      "3": "Rabī' al-Awwal",
+      "4": "Rabī' ath-Thānī",
+      "5": "Jumādā al-Awwal",
+      "6": "Jumādā ath-Ākhirah",
+      "7": "Rajab",
+      "8": "Shaʿbān",
+      "9": "Ramaḍān",
+      "10": "Shawwāl",
+      "11": "Zū al-Qa'dah",
+      "12": "Zū al-Ḥijjah"
+      }
     }
   }
 }

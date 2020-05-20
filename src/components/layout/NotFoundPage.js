@@ -1,11 +1,11 @@
 import React from 'react'
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 export default () => {
   return (
     <div>
       <svg id="mainImage_create" data-name="mainImage" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 171.2 81.5">
-        <path id="c-1" className="changeColor cls-1" d="M46.62,52.5c5.78,4.9,21.14,8.4,39.19,8.4s33.41-3.5,39.19-8.4c-5.78-4.9-21.14-8.4-39.19-8.4S52.41,47.6,46.62,52.5Z" style={{fill: 'rgb(237, 151, 52)'}}></path>
+        <path id="c-1" className="changeColor cls-1" d="M46.62,52.5c5.78,4.9,21.14,8.4,39.19,8.4s33.41-3.5,39.19-8.4c-5.78-4.9-21.14-8.4-39.19-8.4S52.41,47.6,46.62,52.5Z" style={{fill: 'rgb(51, 51, 51)'}}></path>
         <path className="cls-2" d="M99.73,47.71H68.65a7.13,7.13,0,0,0-7.13,7.13V60a152.58,152.58,0,0,0,24.3,1.83,157.87,157.87,0,0,0,21.05-1.35V54.84A7.13,7.13,0,0,0,99.73,47.71Z"></path>
         <path className="cls-3" d="M123.56,55.81C115,58.94,101.27,61,85.81,61c-26,0-47-5.71-47-12.76,0-3.45,5.05-6.58,13.25-8.88"></path>
         <path className="cls-3" d="M55.37,38.47a140,140,0,0,1,30.44-3c26,0,47,5.71,47,12.76,0,2.4-2.44,4.65-6.69,6.57"></path>
@@ -16,9 +16,9 @@ export default () => {
         <circle className="cls-6 earMove" cx="78.06" cy="34.04" r="2.47"></circle>
         <path className="cls-4" d="M81.74,57.06,60.63,49.72h0A6.72,6.72,0,1,0,57.7,62.49H93.25C93.25,56.78,81.74,57.06,81.74,57.06Z"></path>
         <path className="cls-4" d="M77.46,25H90.92a0,0,0,0,1,0,0V39.38a6.73,6.73,0,0,1-6.73,6.73h0a6.73,6.73,0,0,1-6.73-6.73V25A0,0,0,0,1,77.46,25Z"></path>
-        <rect id="c-2" className="changeColor cls-7" x="74.82" y="26.48" width="19.14" height="2.45" transform="translate(1.29 -3.65) rotate(2.49)" style={{fill: 'rgb(237, 151, 52)'}}></rect>
-        <path id="c-3" className="changeColor cls-7" d="M84.36,18.69h.5a7.8,7.8,0,0,1,7.8,7.8v0a0,0,0,0,1,0,0H76.56a0,0,0,0,1,0,0v0A7.8,7.8,0,0,1,84.36,18.69Z" transform="translate(1.06 -3.66) rotate(2.49)" style={{fill: 'rgb(237, 151, 52)'}}></path>
-        <polygon id="c-4" className="changeColor cls-8" points="82.44 23.89 92.18 24.32 92.59 24.34 92.48 26.84 80.96 26.33 82.44 23.89" style={{fill: 'rgb(237, 151, 52)'}}></polygon>
+        <rect id="c-2" className="changeColor cls-7" x="74.82" y="26.48" width="19.14" height="2.45" transform="translate(1.29 -3.65) rotate(2.49)" style={{fill: 'rgb(51, 51, 51)'}}></rect>
+        <path id="c-3" className="changeColor cls-7" d="M84.36,18.69h.5a7.8,7.8,0,0,1,7.8,7.8v0a0,0,0,0,1,0,0H76.56a0,0,0,0,1,0,0v0A7.8,7.8,0,0,1,84.36,18.69Z" transform="translate(1.06 -3.66) rotate(2.49)" style={{fill: 'rgb(51, 51, 51)'}}></path>
+        <polygon id="c-4" className="changeColor cls-8" points="82.44 23.89 92.18 24.32 92.59 24.34 92.48 26.84 80.96 26.33 82.44 23.89" style={{fill: 'rgb(51, 51, 51)'}}></polygon>
         <circle className="cls-9 faceMove" cx="78.72" cy="23.73" r="3.73" transform="translate(51.58 101.34) rotate(-87.51)"></circle>
         <circle className="cls-2 faceMove" cx="78.72" cy="23.73" r="2.36" transform="translate(51.58 101.34) rotate(-87.51)"></circle>
         <circle className="cls-4 earMove" cx="90.92" cy="34.04" r="2.47"></circle>
@@ -72,7 +72,7 @@ export default () => {
         <text id="title" transform="matrix(0.8 0 0 0.8 30 75)">404 Page not found</text>
       </svg>
 
-      {/* <Link to='/' id="newBtn" className="btn"><i className="fas fa-long-arrow-alt-left text-lg"></i> &nbsp;Back to Home</Link>  */}
+      <Link to='/' className="btn"><span className="text-xl m-0" role="img" aria-label="right-arrow">⬅</span> Back to Home</Link> 
     
     </div>
   )
