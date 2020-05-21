@@ -44,6 +44,9 @@ footer{
 audio:focus{
   outline: none;
 }
+ul li{
+  transition: all 0.5s ease;
+}
 
 #search::placeholder{
   color: white;

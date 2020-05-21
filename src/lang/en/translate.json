@@ -1,12 +1,16 @@
 {
   "translations":{
     "en": "English",
-    "ar": "Arabic",
+    "ar": "العربية",
     "langs": "Language",
     "home":{
      "title" :"In the name of Allah, the Compassionate, the Merciful",
      "new_ayah": "New Ayah",
-     "reciter": "Choose a reciter"
+     "reciter": "Choose a reciter",
+     "azan" : "Azan Player",
+     "prayer_times": "Prayer Times",
+     "muezzin": "Choose a Muezzin",
+     "listen_azan": "Listen to Azan"
     },
     "day": "Day",
     "date": "Date",

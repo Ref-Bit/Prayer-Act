@@ -1,0 +1,87 @@
+{
+  "en":[
+    {
+      "id": 1,
+      "name" :"Ahmad Al-Nafees"
+    },
+    {
+      "id": 2,
+      "name" :"Hafiz Mustafa Özcan"
+    },
+    {
+      "id": 3,
+      "name" :"Jamac Hareed"
+    },
+    {
+      "id": 4,
+      "name": "Karl Jenkins"
+    },
+    {
+      "id": 5,
+      "name": "Masjid Al-Haram"
+    },
+    {
+      "id": 6,
+      "name": "Mishary Rashid Alafasy 1"
+    },
+    {
+      "id": 7,
+      "name": "Mishary Rashid Alafasy 2"
+    },
+    {
+      "id": 8,
+      "name": "Mishary Rashid Alafasy 3"
+    },
+    {
+      "id": 9,
+      "name": "Qari Abdul Kareem"
+    },
+    {
+      "id": 10,
+      "name": "Salah Mansoor Az-Zahrani"
+    }
+  ],
+  "ar":[
+    {
+      "id": 1,
+      "name" :"أحمد النفيس"
+    },
+    {
+      "id": 2,
+      "name" :"المسجد الحرام"
+    },
+    {
+      "id": 3,
+      "name" :"جاماك حريد"
+    },
+    {
+      "id": 4,
+      "name" :"حافظ مصطفى أوزجان"
+    },
+    {
+      "id": 5,
+      "name" :"صلاح منصور زهراني"
+    },
+    {
+      "id": 6,
+      "name" :"قاري عبد الكريم"
+    },
+    {
+      "id": 7,
+      "name" :"كارل جيكنز"
+    },
+    {
+      "id": 8,
+      "name" :"مشاري العفاسي 1"
+    },
+    {
+      "id": 9,
+      "name" :"مشاري العفاسي 2"
+    },
+    {
+      "id": 10,
+      "name" :"مشاري العفاسي 3"
+    }
+  ]
+}
+
