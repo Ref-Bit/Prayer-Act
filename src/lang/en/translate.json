@@ -4,7 +4,9 @@
     "ar": "Arabic",
     "langs": "Language",
     "home":{
-     "title" :"In the name of Allah, the Compassionate, the Merciful"
+     "title" :"In the name of Allah, the Compassionate, the Merciful",
+     "new_ayah": "New Ayah",
+     "reciter": "Choose a reciter"
     },
     "day": "Day",
     "date": "Date",

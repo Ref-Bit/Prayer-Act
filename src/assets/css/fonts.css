@@ -1,0 +1,12 @@
+@font-face{
+  font-family: 'Qalam Majeed';
+  src: url('../fonts/Al\ Qalam\ Quran\ Majeed.ttf') format('truetype');
+}
+@font-face{
+  font-family: 'Saleem';
+  src: url('../fonts/_PDMS_Saleem_QuranFont.ttf') format('truetype');
+}
+@font-face{
+  font-family: 'Othmani';
+  src: url('../fonts/ar-Othmani.ttf') format('truetype');
+}
