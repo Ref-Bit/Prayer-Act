@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { useTranslation } from 'react-i18next';
-import { getRandomAyah, getAyahReciters, getAyahAudio, getPrayerTimesCalendarDaily } from '../../api';
+import { getRandomAyah, getAyahReciters, getAyahAudio, getPrayerTimesCalendarDaily, getTranslations } from '../../api';
 import { muezzins, methods, latitudes, schools, midnight } from '../../data/data.json';
 import { GlobalContext } from '../../context/Global';
 import { Spinner } from '..';
@@ -9,10 +9,11 @@ export default () => {
   const { t } = useTranslation()
   const { language, city, country } = useContext(GlobalContext)
   const [ random, setRandom ] = useState(262)
-  const [ identifier, setIdentifier ] = language === 'ar' ? useState('') : useState('asad')
-  const [ reciter, setReciter ] = useState([])
+  const [ identifier, setIdentifier ] = useState('en.asad')
+  const [ reciters, setReciters ] = useState([])
   const [ audio, setAudio ] = useState([])
   const [ ayah, setAyah ] = useState([])
+  const [ translations, setTranslations ] = useState([])
   const [ calender, setCalender ] = useState([])
   const [ muezzin, setMuezzin ] = useState('')
   const [ method, setMethod ] = useState(3)
@@ -21,12 +22,16 @@ export default () => {
   const [ midnightMode, setMidnightMode ] = useState(0)
   
   useEffect(() => {
-    getRandomAyah(random, language, identifier).then(({data}) => {
+    getRandomAyah(random, identifier, language).then(({data}) => {
       setAyah(data)
     }).catch( err => console.log(err))
 
     getAyahReciters(language).then(({data}) => {
-      setReciter(data)
+      setReciters(data)
+    }).catch( err => console.log(err) )
+
+    getTranslations(language).then(({data}) => {
+      setTranslations(data)
     }).catch( err => console.log(err) )
 
     getPrayerTimesCalendarDaily(city, country, method, lat, school, midnightMode).then((data) => {
@@ -34,14 +39,14 @@ export default () => {
     }).catch( err => console.log(err) )
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [language, method, lat, school, midnightMode])
+  }, [language, city, country, identifier, method, lat, school, midnightMode])
 
   const getNewAyah = () =>{
     let num = Math.floor(Math.random() * 6236) + 1
-    const resetSelect = document.querySelector('select')
+    const resetSelect = document.querySelector('#reciters')
     setRandom(num)
     
-    getRandomAyah(num, language, identifier).then(({data}) => {
+    getRandomAyah(num, identifier, language).then(({data}) => {
       setAyah(data)
       resetSelect.selectedIndex = 0
     }).catch( err => console.log(err))
@@ -61,6 +66,8 @@ export default () => {
     }).catch( err => console.log(err) )
   }
 
+  const translateAyah = e => e.target.value === 'initial' ? setIdentifier('en.asad') : setIdentifier(e.target.value)
+  
   const playAzan = e => {
     const azanElement = document.querySelector('#azan-player')
 
@@ -74,7 +81,25 @@ export default () => {
   const handleLatitude = e => setLat(e.target.value) 
   const handleSchool = e => setSchool(e.target.value)
   const handleMidnight = e => setMidnightMode((e.target.value))
+
+  const RenderSelect = ({ options, selected, handleChange, initial, id }) => {
+    if (options.length === 0) {
+      return null;
+    }
   
+    return (
+      <select id={id} value={selected} onChange={handleChange} className={`${language === 'ar' ? 'text-sm ' : ''}block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 rounded shadow leading-tight focus:outline-none transition duration-500`}>
+        <optgroup>
+          <option value="initial">{initial}</option>
+          {
+            options.map((item, i) => (
+              <option key={i} value={item.identifier}>{item.name}</option>
+            ))
+         }
+        </optgroup>
+      </select>
+    );
+  };
 
   if(ayah === null || ayah === undefined || ayah.length === 0 || calender === null || calender === undefined || calender.length === 0) return <Spinner />
   else{
@@ -88,21 +113,23 @@ export default () => {
           }
 
           <div className="block my-4">
-            <div className="inline-block relative w-64">
-              <select onChange={reciteAyah} className={`${language === 'ar' ? 'text-sm ' : ''}block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 rounded shadow leading-tight focus:outline-none transition duration-500`}>
-                <optgroup>
-                  <option>{t('home.reciter')}</option>
-                  {
-                    reciter.map((item, i)=> (
-                      <option key={i} value={item.identifier}>{item.name}</option>
-                      ))
-                  }
-                </optgroup>
-              </select>
+            <div className="inline-block relative w-64 mx-2">
+              <RenderSelect options={reciters} selected={identifier} handleChange={reciteAyah} initial={t('home.reciter.title')} id="reciters"/>
               <div className={`pointer-events-none absolute inset-y-0 ${ language === 'ar' ? 'left-0' : 'right-0'} flex items-center px-2 text-gray-700`}>
                 <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
               </div>
+              {/* {language !== 'ar' ? <small className="text-start text-red-500 inline-block">{t('home.reciter.warning')}</small> : ''} */}
             </div>
+            {language !== 'ar'    
+              ? <div className="inline-block relative w-64 mx-2">
+                  <RenderSelect options={translations} selected={identifier} handleChange={translateAyah} initial={t('home.translation')} id="translations"/>
+                  <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                    <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                  </div>
+                </div>
+              : ''
+            }
+
           </div>
           <audio id="ayah-player" className="mx-auto" controls>
             {audio.length !== 0
@@ -162,7 +189,7 @@ export default () => {
                 </label>
                 <select onChange={handleMethod} id="methods" className={`${language === 'ar' ? 'text-sm ' : ''}block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 p-2 rounded shadow leading-tight focus:outline-none transition duration-500`}>
                   <optgroup>
-                    <option defaultSelected>{t('home.method')}</option>
+                    <option >{t('home.method')}</option>
                     {
                       methods[language].map((method, i) => (
                         <option key={i} value={method.id}>{method.name}</option>
@@ -178,7 +205,7 @@ export default () => {
                 <label htmlFor="latitude" className={`block text-gray-700 ${language === 'ar' ? 'text-md' : 'text-lg'} font-semibold mb-2`}>{t('home.label.lat.title')}</label>
                 <select onChange={handleLatitude} id="latitude" className={`${language === 'ar' ? 'text-sm ' : ''}block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 p-2 rounded shadow leading-tight focus:outline-none transition duration-500`}>
                   <optgroup>
-                    <option defaultSelected>{t('home.lat_method')}</option>
+                    <option >{t('home.lat_method')}</option>
                     {
                       latitudes[language].map((latitude, i) => (
                         <option key={i} value={latitude.id}>{latitude.name}</option>
@@ -194,7 +221,7 @@ export default () => {
                 <label htmlFor="school" className={`block text-gray-700 ${language === 'ar' ? 'text-md' : 'text-lg'} font-semibold mb-2`}>{t('home.label.school.title')}</label>
                 <select onChange={handleSchool} id="school" className={`${language === 'ar' ? 'text-sm ' : ''}block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 p-2 rounded shadow leading-tight focus:outline-none transition duration-500`}>
                   <optgroup>
-                    <option defaultSelected>{t('home.school')}</option>
+                    <option >{t('home.school')}</option>
                     {
                       schools[language].map((school, i) => (
                         <option key={i} value={school.id}>{school.name}</option>
@@ -210,7 +237,7 @@ export default () => {
                 <label htmlFor="midnight" className={`block text-gray-700 ${language === 'ar' ? 'text-md' : 'text-lg'} font-semibold mb-2`}>{t('home.label.midnight.title')}</label>
                 <select onChange={handleMidnight} id="midnight" className={`${language === 'ar' ? 'text-sm ' : ''}block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 p-2 rounded shadow leading-tight focus:outline-none transition duration-500`}>
                   <optgroup>
-                    <option defaultSelected>{t('home.midnight')}</option>
+                    <option >{t('home.midnight')}</option>
                     {
                       midnight[language].map((midnight, i) => (
                         <option key={i} value={midnight.id}>{midnight.name}</option>

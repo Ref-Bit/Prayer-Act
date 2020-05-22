@@ -51,24 +51,19 @@ export const getPrayerTimesCalendarDaily = async (city, country, method, lat, sc
 }
 
 
-export const getRandomAyah = async (random, locale, identifier) => {
-
-  if( locale === 'ar' ){
-    try {
-      const { data } = await axios(`${apiAyahURL}ayah/${random}/${locale}.${identifier}`)
-
+export const getRandomAyah = async (random, identifier, language) => {
+  try {
+    if(language !=='ar'){
+      const { data } = await axios(`${apiAyahURL}ayah/${random}/${identifier}`)
+  
       return data
-    } catch (error) {
-        console.log(error)
-    }
-  }else{
-    try {
-      const { data } = await axios(`${apiAyahURL}ayah/${random}/${locale}.${identifier}`)
-
+    }else{
+      const { data } = await axios(`${apiAyahURL}ayah/${random}`)
+  
       return data
-    } catch (error) {
-        console.log(error)    
     }
+  } catch (error) {
+      console.log(error)
   }
 }
 
@@ -86,6 +81,16 @@ export const getAyahAudio = async (num, identifier) => {
   try {
     const { data } = await axios(`${apiAyahURL}ayah/${num}/${identifier}`)
 
+    return data
+  } catch (error) {
+    console.log(error)
+  }
+}
+
+export const getTranslations = async (locale) => {
+  try{
+    const { data } = await axios(`${apiAyahURL}edition?format=text&language=${locale}&type=translation`)
+    
     return data
   } catch (error) {
     console.log(error)

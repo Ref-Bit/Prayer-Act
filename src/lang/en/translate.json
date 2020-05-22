@@ -6,8 +6,12 @@
     "home":{
      "title" :"In the name of Allah, the Compassionate, the Merciful",
      "new_ayah": "New Ayah",
-     "reciter": "Choose a reciter",
-     "azan" : "Azan Player",
+     "reciter": {
+        "title":"Choose a reciter",
+        "warning": "*Irrelevant to translation script"
+     },
+     "translation": "Choose a translation",
+     "azan": "Azan Player",
      "prayer_cal":"Prayer Times Calculator",
      "prayer_times": "Prayer Times",
      "muezzin": "Choose a Muezzin",
