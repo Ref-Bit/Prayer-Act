@@ -8,9 +8,29 @@
      "new_ayah": "New Ayah",
      "reciter": "Choose a reciter",
      "azan" : "Azan Player",
+     "prayer_cal":"Prayer Times Calculator",
      "prayer_times": "Prayer Times",
      "muezzin": "Choose a Muezzin",
-     "listen_azan": "Listen to Azan"
+     "listen_azan": "Listen to Azan",
+     "method": "Choose a method",
+     "lat_method": "Choose an adjustment method",
+     "school": "Choose a school",
+     "midnight": "Choose a method",
+     "label":{
+        "method":{
+          "title":"Method",
+          "link": "(Learn more about calculation methods)"
+        },
+        "midnight":{
+          "title": "Midnight Mode (only affects midnight calculation)"
+        },
+        "lat":{
+          "title": "Higher Latitude Adjustment Method (for locations like UK, Sweden, Canada, Alaska, etc...)"
+        },
+        "school":{
+          "title": "Juristic School (only affects Asr prayer calculation)"
+        }
+      }
     },
     "day": "Day",
     "date": "Date",

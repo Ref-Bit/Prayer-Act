@@ -1,0 +1,404 @@
+{
+  "muezzins":{
+    "en":[
+      {
+        "id": 1,
+        "name" :"Ahmad Al-Nafees"
+      },
+      {
+        "id": 2,
+        "name" :"Hafiz Mustafa Özcan"
+      },
+      {
+        "id": 3,
+        "name" :"Jamac Hareed"
+      },
+      {
+        "id": 4,
+        "name": "Karl Jenkins"
+      },
+      {
+        "id": 5,
+        "name": "Masjid Al-Haram"
+      },
+      {
+        "id": 6,
+        "name": "Mishary Rashid Alafasy 1"
+      },
+      {
+        "id": 7,
+        "name": "Mishary Rashid Alafasy 2"
+      },
+      {
+        "id": 8,
+        "name": "Mishary Rashid Alafasy 3"
+      },
+      {
+        "id": 9,
+        "name": "Qari Abdul Kareem"
+      },
+      {
+        "id": 10,
+        "name": "Salah Mansoor Az-Zahrani"
+      }
+    ],
+    "ar":[
+      {
+        "id": 1,
+        "name" :"أحمد النفيس"
+      },
+      {
+        "id": 2,
+        "name" :"المسجد الحرام"
+      },
+      {
+        "id": 3,
+        "name" :"جاماك حريد"
+      },
+      {
+        "id": 4,
+        "name" :"حافظ مصطفى أوزجان"
+      },
+      {
+        "id": 5,
+        "name" :"صلاح منصور زهراني"
+      },
+      {
+        "id": 6,
+        "name" :"قاري عبد الكريم"
+      },
+      {
+        "id": 7,
+        "name" :"كارل جيكنز"
+      },
+      {
+        "id": 8,
+        "name" :"مشاري العفاسي 1"
+      },
+      {
+        "id": 9,
+        "name" :"مشاري العفاسي 2"
+      },
+      {
+        "id": 10,
+        "name" :"مشاري العفاسي 3"
+      }
+    ]  
+  },
+  "methods":{
+    "en":[
+        {
+          "id": 3,
+          "name": "Muslim World League",
+          "params": {
+            "Fajr": 18,
+            "Isha": 17
+          }
+        }, 
+        {
+          "id": 2,
+          "name": "Islamic Society of North America (ISNA)",
+          "params": {
+          "Fajr": 15,
+          "Isha": 15
+        }
+      },
+      {
+        "id": 5,
+        "name": "Egyptian General Authority of Survey",
+        "params": {
+        "Fajr": 19.5,
+        "Isha": 17.5
+        }
+      },
+      {
+        "id": 4,
+        "name": "Umm Al-Qura University, Makkah",
+        "params": {
+        "Fajr": 18.5,
+        "Isha": "90 min"
+        }
+      },
+      {
+        "id": 1,
+        "name": "University of Islamic Sciences, Karachi",
+        "params": {
+        "Fajr": 18,
+        "Isha": 18
+        }
+      },
+      {
+        "id": 7,
+        "name": "Institute of Geophysics, University of Tehran",
+        "params": {
+        "Fajr": 17.7,
+        "Isha": 14,
+        "Maghrib": 4.5,
+        "Midnight": "JAFARI"
+        }
+      },
+      {
+        "id": 0,
+        "name": "Shia Ithna-Ashari, Leva Institute, Qum",
+        "params": {
+        "Fajr": 16,
+        "Isha": 14,
+        "Maghrib": 4,
+        "Midnight": "JAFARI"
+        }
+      },
+      {
+        "id": 8,
+        "name": "Gulf Region",
+        "params": {
+        "Fajr": 19.5,
+        "Isha": "90 min"
+        }
+      },
+      {
+        "id": 9,
+        "name": "Kuwait",
+        "params": {
+        "Fajr": 18,
+        "Isha": 17.5
+        }
+      },
+      {
+        "id": 10,
+        "name": "Qatar",
+        "params": {
+        "Fajr": 18,
+        "Isha": "90 min"
+        }
+      },
+      {
+        "id": 11,
+        "name": "Majlis Ugama Islam Singapura, Singapore",
+        "params": {
+        "Fajr": 20,
+        "Isha": 18
+        }
+      },
+      {
+        "id": 12,
+        "name": "Union Organization Islamic de France",
+        "params": {
+        "Fajr": 12,
+        "Isha": 12
+        }
+      },
+      {
+        "id": 13,
+        "name": "Diyanet İşleri Başkanlığı, Turkey",
+        "params": {
+        "Fajr": 18,
+        "Isha": 17
+        }
+      },
+      {
+        "id": 14,
+        "name": "Spiritual Administration of Muslims of Russia",
+        "params": {
+        "Fajr": 16,
+        "Isha": 15
+        }
+      }
+    ],
+    "ar":[
+        {
+          "id": 3,
+          "name": "رابطة العالم الإسلامي",
+          "params": {
+            "Fajr": 18,
+            "Isha": 17
+          }
+        }, 
+        {
+          "id": 2,
+          "name": "الجمعية الإسلامية لأمريكا الشمالية (ISNA)",
+          "params": {
+          "Fajr": 15,
+          "Isha": 15
+        }
+      },
+      {
+        "id": 5,
+        "name": "الهيئة المصرية العامة للمساحة",
+        "params": {
+        "Fajr": 19.5,
+        "Isha": 17.5
+        }
+      },
+      {
+        "id": 4,
+        "name": "جامعة أم القرى، مكة المكرمة",
+        "params": {
+        "Fajr": 18.5,
+        "Isha": "90 min"
+        }
+      },
+      {
+        "id": 1,
+        "name": "جامعة العلوم الإسلامية، كراتشي",
+        "params": {
+        "Fajr": 18,
+        "Isha": 18
+        }
+      },
+      {
+        "id": 7,
+        "name": "معهد الجيوفيزياء، جامعة طهران",
+        "params": {
+        "Fajr": 17.7,
+        "Isha": 14,
+        "Maghrib": 4.5,
+        "Midnight": "JAFARI"
+        }
+      },
+      {
+        "id": 0,
+        "name": "الشيعة الأثناعشرية، معهد ليفا ، قم",
+        "params": {
+        "Fajr": 16,
+        "Isha": 14,
+        "Maghrib": 4,
+        "Midnight": "JAFARI"
+        }
+      },
+      {
+        "id": 8,
+        "name": "منطقة الخليج",
+        "params": {
+        "Fajr": 19.5,
+        "Isha": "90 min"
+        }
+      },
+      {
+        "id": 9,
+        "name": "الكويت",
+        "params": {
+        "Fajr": 18,
+        "Isha": 17.5
+        }
+      },
+      {
+        "id": 10,
+        "name": "قطر",
+        "params": {
+        "Fajr": 18,
+        "Isha": "90 min"
+        }
+      },
+      {
+        "id": 11,
+        "name": "مجلس أوغاما إسلام سينجابورا ، سنغافورة",
+        "params": {
+        "Fajr": 20,
+        "Isha": 18
+        }
+      },
+      {
+        "id": 12,
+        "name": "منظمة الاتحاد الإسلامي الفرنسي",
+        "params": {
+        "Fajr": 12,
+        "Isha": 12
+        }
+      },
+      {
+        "id": 13,
+        "name": "مديرية الشؤون الدينية، تركيا",
+        "params": {
+        "Fajr": 18,
+        "Isha": 17
+        }
+      },
+      {
+        "id": 14,
+        "name": "الإدارة الروحية لمسلمي روسيا",
+        "params": {
+        "Fajr": 16,
+        "Isha": 15
+        }
+      }
+    ]
+  },
+  "latitudes":
+  {
+    "en":[
+      {
+        "id": 1,
+        "name": "Middle of the Night"
+      },
+      {
+        "id": 2,
+        "name": "One Seventh"
+      },
+      {
+        "id": 3,
+        "name": "Angle Based"
+      }
+    ],
+    "ar":[
+      {
+        "id": 1,
+        "name": "حسب منتصف الليل"
+      },
+      {
+        "id": 2,
+        "name": "حسب السُبع"
+      },
+      {
+        "id": 3,
+        "name": "حسب الزاوية"
+      }
+    ]
+  },
+  "schools":
+  {
+    "en":[
+      {
+        "id": 0,
+        "name": "Shafi, Hanbali, Maliki, Shia and all others"
+      },
+      {
+        "id": 1,
+        "name": "Hanafi"
+      }
+    ],
+    "ar":[
+      {
+        "id": 0,
+        "name": "الشافعي، الحنبلي، المالكي وبقية المدارس الأخرى"
+      },
+      {
+        "id": 1,
+        "name": "الحنفي"
+      }
+    ]
+  },
+  "midnight":
+  {
+    "en":[
+      {
+        "id": 0,
+        "name": "Standard (Mid Sunset to Sunrise)"
+      },
+      {
+        "id": 1,
+        "name": "Jafari (Mid Sunset to Fajr)"
+      }
+    ],
+    "ar":[
+      {
+        "id": 0,
+        "name": "القياسي (منتصف غروب الشمس إلى شروق الشمس)"
+      },
+      {
+        "id": 1,
+        "name": "الجعفري (منتصف الغروب إلى الفجر)"
+      }
+    ]
+  }
+}
+

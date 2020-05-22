@@ -34,8 +34,8 @@ export const getPrayerTimesCalendar = async (city, country, month, year) => {
   }
 }
 
-export const getPrayerTimesCalendarDaily = async (city, country) => {
-  let changeURL = `${apiTimesURL}timingsByCity?city=${city}&country=${country}&method=3`
+export const getPrayerTimesCalendarDaily = async (city, country, method, lat, school, midnight) => {
+  let changeURL = `${apiTimesURL}timingsByCity?city=${city}&country=${country}&method=${method}&latitudeAdjustmentMethod=${lat}&school=${school}&midnightMode=${midnight}`
 
   try {
     const { data: { data } } = await axios.get(changeURL);
