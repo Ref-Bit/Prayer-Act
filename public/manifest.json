@@ -1,6 +1,6 @@
 {
   "short_name": "Prayer Act",
-  "name": "Create React App Sample",
+  "name": "A web app to show both Gregorian and Hijri calenders, Prayer Times and Asmaa Al-Husna (Names of Allah).",
   "icons": [
     {
       "src": "favicon.ico",
