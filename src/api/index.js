@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const apiTimesURL = 'http://api.aladhan.com/v1/'
+const apiTimesURL = 'https://api.aladhan.com/v1/'
 const apiAyahURL = 'https://api.alquran.cloud/v1/'
 
 
@@ -99,7 +99,7 @@ export const getTranslations = async (locale) => {
 
 export const getAsmaa = async () => {
   try{
-    const { data } = await axios(`http://api.aladhan.com/asmaAlHusna`)
+    const { data } = await axios(`https://api.aladhan.com/asmaAlHusna`)
     
     return data
   } catch (error) {
