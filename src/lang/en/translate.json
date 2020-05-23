@@ -10,6 +10,10 @@
         "title":"Choose a reciter",
         "warning": "*Irrelevant to translation script"
      },
+     "asmaa": {
+       "title": "The names of Allah",
+       "load_more": "Load More"
+     },
      "translation": "Choose a translation",
      "azan": "Azan Player",
      "prayer_cal":"Prayer Times Calculator",

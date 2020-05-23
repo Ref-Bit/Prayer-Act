@@ -14799,8 +14799,48 @@ ul li{
   font-family: var(--ayah-font);
 }
 
+.asmaa-font{
+  position: relative;
+  bottom: 12rem;
+  height: 10px;
+  font-size: 50px;
+  font-family: var(--ayah-font);
+}
+
+.asmaa-img{
+  opacity: 0.7;
+}
+
+.asmaa-num{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #434190;
+  color: #fff;
+  padding: 3px;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+  bottom: 2.5rem;
+}
+
+.asmaa-meaning{
+  position: relative;
+  bottom: 2.5rem;
+  font-size: 18px;
+  font-weight: 600;
+}
+
 .default-font{
   font-family: var(--default-font);
+}
+
+.font-80{
+  font-size: 80px;
+}
+
+.ltr{
+  direction: ltr;
 }
 
 /* Language Switcher */

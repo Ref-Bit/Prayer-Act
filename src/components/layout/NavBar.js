@@ -12,6 +12,9 @@ export default () => {
     let locale = e.target.value;
     switchLangs(locale)
     setLanguage(locale)
+    const audioElement = document.querySelector('#ayah-player')
+    const audioSource = document.querySelector('#ayah-player > source')
+    audioElement.autoPlay = false;audioElement.load();audioSource.src = ''
   }
   
   return (

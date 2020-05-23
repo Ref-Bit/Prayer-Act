@@ -1,8 +1,9 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { useTranslation } from 'react-i18next';
-import { getRandomAyah, getAyahReciters, getAyahAudio, getPrayerTimesCalendarDaily, getTranslations } from '../../api';
+import { getRandomAyah, getAyahReciters, getAyahAudio, getPrayerTimesCalendarDaily, getTranslations, getAsmaa } from '../../api';
 import { muezzins, methods, latitudes, schools, midnight } from '../../data/data.json';
 import { GlobalContext } from '../../context/Global';
+import { shuffle } from '../../utils'
 import { Spinner } from '..';
 
 export default () => {
@@ -10,16 +11,19 @@ export default () => {
   const { language, city, country } = useContext(GlobalContext)
   const [ random, setRandom ] = useState(262)
   const [ identifier, setIdentifier ] = useState('en.asad')
+  const [ reciter, setReciter ] = useState('')
   const [ reciters, setReciters ] = useState([])
   const [ audio, setAudio ] = useState([])
   const [ ayah, setAyah ] = useState([])
   const [ translations, setTranslations ] = useState([])
+  const [ asmaa, setAsmaa ] = useState([])
   const [ calender, setCalender ] = useState([])
   const [ muezzin, setMuezzin ] = useState('')
   const [ method, setMethod ] = useState(3)
   const [ lat, setLat] = useState(3)
   const [ school, setSchool ] = useState(0)
   const [ midnightMode, setMidnightMode ] = useState(0)
+  const [ visible, setVisible ] = useState(12)
   
   useEffect(() => {
     getRandomAyah(random, identifier, language).then(({data}) => {
@@ -32,6 +36,10 @@ export default () => {
 
     getTranslations(language).then(({data}) => {
       setTranslations(data)
+    }).catch( err => console.log(err) )
+
+    getAsmaa().then(({data}) => {
+      setAsmaa(data)
     }).catch( err => console.log(err) )
 
     getPrayerTimesCalendarDaily(city, country, method, lat, school, midnightMode).then((data) => {
@@ -54,10 +62,12 @@ export default () => {
     const audioElement = document.querySelector('#ayah-player')
     const audioSource = document.querySelector('#ayah-player > source')
     audioElement.autoPlay = false;audioElement.load();audioSource.src = '' ;
+    setReciter('initial');
   }
 
   const reciteAyah = e => {
     const audioElement = document.querySelector('#ayah-player')
+    setReciter(e.target.value);
 
     getAyahAudio(random, e.target.value).then(({data}) => {
       setAudio(data)
@@ -101,7 +111,17 @@ export default () => {
     );
   };
 
-  if(ayah === null || ayah === undefined || ayah.length === 0 || calender === null || calender === undefined || calender.length === 0) return <Spinner />
+  const loadMore = () => {
+    setTimeout(() => {
+      setVisible(() => {
+        return visible + 8;
+      });
+    }, 1000)
+  }
+
+  if(ayah === null || ayah === undefined || ayah.length === 0 ||
+    asmaa === null || asmaa === undefined || asmaa.length === 0 ||
+    calender === null || calender === undefined || calender.length === 0) return <Spinner />
   else{
     return (
       <div>
@@ -114,7 +134,7 @@ export default () => {
 
           <div className="block my-4">
             <div className="inline-block relative w-64 mx-2">
-              <RenderSelect options={reciters} selected={identifier} handleChange={reciteAyah} initial={t('home.reciter.title')} id="reciters"/>
+              <RenderSelect options={reciters} selected={reciter} handleChange={reciteAyah} initial={t('home.reciter.title')} id="reciters"/>
               <div className={`pointer-events-none absolute inset-y-0 ${ language === 'ar' ? 'left-0' : 'right-0'} flex items-center px-2 text-gray-700`}>
                 <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
               </div>
@@ -139,8 +159,30 @@ export default () => {
           </audio>
           <button className="mt-2 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow transition duration-500" onClick={getNewAyah}>{t('home.new_ayah')}</button>
         </div>
-        <div className="flex flex-wrap items-baseline mt-6">
-          <div className={`w-full min-h-600 lg:w-2/6 md:px-4 lg:px-6 py-5 shadow hover:shadow-xl transition duration-500 ${ language === 'ar' ? 'border-r-4' : 'border-l-4'} hover:border-red-500 rounded`}>
+        <div className="text-center my-16">
+          <h1 className="text-4xl">{t('home.asmaa.title')}</h1>
+          <div className="flex flex-wrap -mx-1 lg:-mx-4">
+            {
+              asmaa.slice(0, visible).map((item, i) => (
+              <div key={i} className="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
+                <article className="overflow-hidden rounded-lg shadow hover:shadow-2xl transform hover:-translate-y-5 transition duration-500">
+                  <img alt="Placeholder" className="asmaa-img block h-auto w-full" src={`${process.env.PUBLIC_URL}/asmaa.jpg`}/>
+                  <h1 className={language === 'ar' ? 'font-80 asmaa-font' : 'asmaa-font'}>{language === 'ar' ? item.name : item.transliteration}</h1>
+                  <div className="flex items-center justify-between leading-tight px-2 h-0 bg-red-600 ltr">
+                    <h1 className="asmaa-meaning">{item.en.meaning}</h1>
+                    <p className="asmaa-num">{item.number}</p>  
+                  </div>
+                </article>
+              </div>
+              ))
+            }
+          </div>
+          {visible < asmaa.length &&
+            <button onClick={loadMore} className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow transition duration-500">{t('home.asmaa.load_more')}</button>
+          }
+        </div>
+        <div className="flex flex-wrap items-baseline mt-16">
+          <div className={`w-full min-h-600 lg:w-2/6 md:px-4 lg:px-6 py-5 shadow hover:shadow-xl transform hover:-translate-x-6 transition duration-500 ${ language === 'ar' ? 'border-r-4' : 'border-l-4'} hover:border-red-500 rounded`}>
             <h1 className="text-2xl font-medium">{t('home.prayer_times')}</h1>
             <small className="font-medium text-gray-700">{city}, {country}</small>
             <ul className="text-lg">
@@ -177,7 +219,7 @@ export default () => {
               }
             </audio>
           </div>
-          <div className={`w-full min-h-600 lg:w-4/6 md:px-4 lg:px-6 py-5 shadow hover:shadow-xl transition duration-500 ${ language === 'ar' ? 'border-r-4' : 'border-l-4'} hover:border-red-500 rounded`}>
+          <div className={`w-full min-h-600 lg:w-4/6 md:px-4 lg:px-6 py-5 shadow hover:shadow-xl transform hover:translate-x-6 transition duration-500 ${ language === 'ar' ? 'border-r-4' : 'border-l-4'} hover:border-red-500 rounded`}>
             <h1 className="text-center text-2xl font-medium">{t('home.prayer_cal')}</h1>
             <div className="mt-6">
               <div className="my-4 py-3">

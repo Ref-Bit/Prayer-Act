@@ -96,3 +96,13 @@ export const getTranslations = async (locale) => {
     console.log(error)
   }
 }
+
+export const getAsmaa = async () => {
+  try{
+    const { data } = await axios(`http://api.aladhan.com/asmaAlHusna`)
+    
+    return data
+  } catch (error) {
+    console.log(error)
+  }
+}
