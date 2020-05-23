@@ -67,6 +67,14 @@ ul li{
 .ayah-font{
   font-family: var(--ayah-font);
 }
+.reciter-warning{
+  display: inline-flex;
+  position: relative;
+  bottom: -2rem;
+  right: 12rem;
+  text-align: start;
+  color: #f56565;
+}
 .asmaa-font{
   position: relative;
   bottom: 12rem;

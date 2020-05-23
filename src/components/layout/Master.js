@@ -3,7 +3,6 @@ import { useTranslation } from 'react-i18next';
 import { getRandomAyah, getAyahReciters, getAyahAudio, getPrayerTimesCalendarDaily, getTranslations, getAsmaa } from '../../api';
 import { muezzins, methods, latitudes, schools, midnight } from '../../data/data.json';
 import { GlobalContext } from '../../context/Global';
-import { shuffle } from '../../utils'
 import { Spinner } from '..';
 
 export default () => {
@@ -132,16 +131,16 @@ export default () => {
             : <p className="text-lg px-64 text-gray-700">{ayah.text} <br /> {ayah.surah.englishName}: [{ayah.numberInSurah}]</p>
           }
 
-          <div className="block my-4">
-            <div className="inline-block relative w-64 mx-2">
+          <div className={`block ${language === 'ar' ? 'my-4' : 'mt-6 mb-12'}`}>
+            <div className="inline-block relative w-64 -m-16">
               <RenderSelect options={reciters} selected={reciter} handleChange={reciteAyah} initial={t('home.reciter.title')} id="reciters"/>
               <div className={`pointer-events-none absolute inset-y-0 ${ language === 'ar' ? 'left-0' : 'right-0'} flex items-center px-2 text-gray-700`}>
                 <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
               </div>
-              {/* {language !== 'ar' ? <small className="text-start text-red-500 inline-block">{t('home.reciter.warning')}</small> : ''} */}
             </div>
+            {language !== 'ar' ? <small className="reciter-warning">{t('home.reciter.warning', 'en')}</small> : ''}
             {language !== 'ar'    
-              ? <div className="inline-block relative w-64 mx-2">
+              ? <div className="inline-block relative w-64 -m-16">
                   <RenderSelect options={translations} selected={identifier} handleChange={translateAyah} initial={t('home.translation')} id="translations"/>
                   <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
                     <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
@@ -182,7 +181,7 @@ export default () => {
           }
         </div>
         <div className="flex flex-wrap items-baseline mt-16">
-          <div className={`w-full min-h-600 lg:w-2/6 md:px-4 lg:px-6 py-5 shadow hover:shadow-xl transform hover:-translate-x-6 transition duration-500 ${ language === 'ar' ? 'border-r-4' : 'border-l-4'} hover:border-red-500 rounded`}>
+          <div className={`w-full min-h-600 lg:w-2/6 md:px-4 lg:px-6 py-5 shadow hover:shadow-xl transform ${language === 'ar' ? 'hover:translate-x-6': 'hover:-translate-x-6' } transition duration-500 ${ language === 'ar' ? 'border-r-4' : 'border-l-4'} hover:border-red-500 rounded`}>
             <h1 className="text-2xl font-medium">{t('home.prayer_times')}</h1>
             <small className="font-medium text-gray-700">{city}, {country}</small>
             <ul className="text-lg">
@@ -219,7 +218,7 @@ export default () => {
               }
             </audio>
           </div>
-          <div className={`w-full min-h-600 lg:w-4/6 md:px-4 lg:px-6 py-5 shadow hover:shadow-xl transform hover:translate-x-6 transition duration-500 ${ language === 'ar' ? 'border-r-4' : 'border-l-4'} hover:border-red-500 rounded`}>
+          <div className={`w-full min-h-600 lg:w-4/6 md:px-4 lg:px-6 py-5 shadow hover:shadow-xl transform ${language === 'ar' ? 'hover:-translate-x-6': 'hover:translate-x-6' } transition duration-500 ${ language === 'ar' ? 'border-r-4' : 'border-l-4'} hover:border-red-500 rounded`}>
             <h1 className="text-center text-2xl font-medium">{t('home.prayer_cal')}</h1>
             <div className="mt-6">
               <div className="my-4 py-3">
