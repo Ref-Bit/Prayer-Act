@@ -6,7 +6,7 @@ const apiAyahURL = 'https://api.alquran.cloud/v1/'
 
 export const getCityCountry = async () => {
   try {
-    const { data } = await axios.get(`http://api.ipstack.com/check?access_key=${process.env.REACT_APP_IP_ACCESS_KEY}`)
+    const { data } = await axios.get(`https://api.ipbase.com/v2/info?apikey=${process.env.REACT_APP_IP_ACCESS_KEY}`)
 
     if(data !== null || data.length !== 0){
       return data   
