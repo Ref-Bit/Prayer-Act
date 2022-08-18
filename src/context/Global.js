@@ -41,14 +41,14 @@ export const GlobalProvider = ({children}) => {
       /* GET CITY NAMES */
       getCityCountry()
       .then(data => {
-        setCity(data.city)
+        setCity(data.data.location.city.name)
       })
       .catch( err => console.log(err))
 
       /* GET RECIPE AREAS NAMES */
       getCityCountry()
       .then(data => {
-        setCountry(data.country_code)
+        setCountry(data.data.location.country.alpha2)
       })
       .catch( err => console.log(err))
     }, [])
