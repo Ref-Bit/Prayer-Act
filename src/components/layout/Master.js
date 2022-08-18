@@ -2,6 +2,7 @@ import React, { useState, useEffect, useContext } from 'react';
 import { useTranslation } from 'react-i18next';
 import { getRandomAyah, getAyahReciters, getAyahAudio, getPrayerTimesCalendarDaily, getTranslations, getAsmaa } from '../../api';
 import { muezzins, methods, latitudes, schools, midnight } from '../../data/data.json';
+import asmaa from '../../data/asmaa_al_husna.json';
 import { GlobalContext } from '../../context/Global';
 import { Spinner } from '..';
 
@@ -15,7 +16,6 @@ export default () => {
   const [ audio, setAudio ] = useState([])
   const [ ayah, setAyah ] = useState([])
   const [ translations, setTranslations ] = useState([])
-  const [ asmaa, setAsmaa ] = useState([])
   const [ calender, setCalender ] = useState([])
   const [ muezzin, setMuezzin ] = useState('')
   const [ method, setMethod ] = useState(3)
@@ -35,10 +35,6 @@ export default () => {
 
     getTranslations(language).then(({data}) => {
       setTranslations(data)
-    }).catch( err => console.log(err) )
-
-    getAsmaa().then(({data}) => {
-      setAsmaa(data)
     }).catch( err => console.log(err) )
 
     getPrayerTimesCalendarDaily(city, country, method, lat, school, midnightMode).then((data) => {

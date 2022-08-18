@@ -8,9 +8,9 @@ export const getCityCountry = async () => {
   try {
     const { data } = await axios.get(`https://api.ipbase.com/v2/info?apikey=${process.env.REACT_APP_IP_ACCESS_KEY}`)
 
-    if(data !== null || data.length !== 0){
-      return data   
-    }else{
+    if (data !== null || data.length !== 0) {
+      return data
+    } else {
       return []
     }
   } catch (error) {
@@ -24,9 +24,9 @@ export const getPrayerTimesCalendar = async (city, country, month, year) => {
   try {
     const { data: { data } } = await axios.get(changeURL);
 
-    if(data !== null || data.length !== 0){
-      return data   
-    }else{
+    if (data !== null || data.length !== 0) {
+      return data
+    } else {
       return []
     }
   } catch (error) {
@@ -40,9 +40,9 @@ export const getPrayerTimesCalendarDaily = async (city, country, method, lat, sc
   try {
     const { data: { data } } = await axios.get(changeURL);
 
-    if(data !== null || data.length !== 0){
-      return data   
-    }else{
+    if (data !== null || data.length !== 0) {
+      return data
+    } else {
       return []
     }
   } catch (error) {
@@ -53,17 +53,17 @@ export const getPrayerTimesCalendarDaily = async (city, country, method, lat, sc
 
 export const getRandomAyah = async (random, identifier, language) => {
   try {
-    if(language !=='ar'){
+    if (language !== 'ar') {
       const { data } = await axios(`${apiAyahURL}ayah/${random}/${identifier}`)
-  
+
       return data
-    }else{
+    } else {
       const { data } = await axios(`${apiAyahURL}ayah/${random}`)
-  
+
       return data
     }
   } catch (error) {
-      console.log(error)
+    console.log(error)
   }
 }
 
@@ -88,19 +88,9 @@ export const getAyahAudio = async (num, identifier) => {
 }
 
 export const getTranslations = async (locale) => {
-  try{
+  try {
     const { data } = await axios(`${apiAyahURL}edition?format=text&language=${locale}&type=translation`)
-    
-    return data
-  } catch (error) {
-    console.log(error)
-  }
-}
 
-export const getAsmaa = async () => {
-  try{
-    const { data } = await axios('../data/asmaa_al_husna.json')
-    
     return data
   } catch (error) {
     console.log(error)
