@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { useTranslation } from 'react-i18next';
-import { getRandomAyah, getAyahReciters, getAyahAudio, getPrayerTimesCalendarDaily, getTranslations, getAsmaa } from '../../api';
+import { getRandomAyah, getAyahReciters, getAyahAudio, getPrayerTimesCalendarDaily, getTranslations } from '../../api';
 import { muezzins, methods, latitudes, schools, midnight } from '../../data/data.json';
 import asmaa from '../../data/asmaa_al_husna.json';
 import { GlobalContext } from '../../context/Global';
