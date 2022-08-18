@@ -99,7 +99,7 @@ export const getTranslations = async (locale) => {
 
 export const getAsmaa = async () => {
   try{
-    const { data } = await axios(`https://api.aladhan.com/asmaAlHusna`)
+    const { data } = await axios('../data/asmaa_al_husna.json')
     
     return data
   } catch (error) {

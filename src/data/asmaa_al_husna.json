@@ -1,0 +1,902 @@
+[
+	{
+		"number": "0",
+		"name": "اَلله",
+		"transliteration": "Allah",
+		"en": {
+			"meaning": "The name of Allah",
+			"description": "Allah is Al-ism Al-a’zam, the greatest name which contains all the divine attributes and is the sign of the essence and cause of all existence. Allah does not resemble in any way any of His creation. Allah is Allah’s name only. Nothing else can assume this name or share it."
+		}
+	},
+	{
+		"number": "1",
+		"name": "اَلرََّحْماَنُ",
+		"transliteration": "Ar-Rahman",
+		"en": {
+			"meaning": "The All-Compassionate",
+			"description": "He is the One who wills Mercy and good for all creation, at all times, He pours upon all creation infinite bounties."
+		}
+	},
+	{
+		"number": "2",
+		"name": "اَلرََّحِيْمُ",
+		"transliteration": "Ar-Rahim",
+		"en": {
+			"meaning": "The most merciful",
+			"description": "He is the source of infinite mercy and benificence, who rewards with eternal gifts the one who uses his bounties for the good."
+		}
+	},
+	{
+		"number": "3",
+		"name": "اَلْمَلِكُ",
+		"transliteration": "Al-Malik",
+		"en": {
+			"meaning": "The Sovereign",
+			"description": "He is the owner and ruler of the entire universe, visible and invisible, and of all creation, from before the beginning and after the end."
+		}
+	},
+	{
+		"number": "4",
+		"name": "اَلْقُدُّوْسُ",
+		"transliteration": "Al-Quddus",
+		"en": {
+			"meaning": "The Pure One",
+			"description": "He is the most pure one, devoid of all Blemish, Shortcoming, Weakness, Heedlessness and Error."
+		}
+	},
+	{
+		"number": "5",
+		"name": "اَلْسَّلاَمُ",
+		"transliteration": "As-Salam",
+		"en": {
+			"meaning": "The Source of Peace",
+			"description": "He is the One who saves the believing servants from all dangers, bringing them peace, blessings and security of paradise."
+		}
+	},
+	{
+		"number": "6",
+		"name": "الْمُؤْمِنُ",
+		"transliteration": "Al-Mu'min",
+		"en": {
+			"meaning": "Giver of Peace",
+			"description": "He is the illuminator of the light of faith in hearts. He is the Comforter, the Protector of the ones who take refuge in Him."
+		}
+	},
+	{
+		"number": "7",
+		"name": "اَلْمُهَيْمِنُ",
+		"transliteration": "Al-Muhaymin",
+		"en": {
+			"meaning": "The Guardian",
+			"description": "He is the Protector and the Guardian. He is the One who sees to the growth of His creation, leading them where they are destined to go."
+		}
+	},
+	{
+		"number": "8",
+		"name": "اَلْعَزِيْزُ",
+		"transliteration": "Al-A'zeez",
+		"en": {
+			"meaning": "The Victorious",
+			"description": "He is the victorious One whom no force can overwhelm. There is no strength in this universe that can stand before His will."
+		}
+	},
+	{
+		"number": "9",
+		"name": "اَلْجَبَّارُ",
+		"transliteration": "Al-Jabbar",
+		"en": {
+			"meaning": "The Compeller",
+			"description": "He is the repairer of the broken, the completer of the lacking, the one who can enforce His will without any opposition."
+		}
+	},
+	{
+		"number": "10",
+		"name": "اَلْمُتَكَبِّرُ",
+		"transliteration": "Al-Mutakabbir",
+		"en": {
+			"meaning": "The Greatest",
+			"description": "He is the greatest, who shows His greatness in everything, on all occassions."
+		}
+	},
+	{
+		"number": "11",
+		"name": "اَلْخَالِقُ",
+		"transliteration": "Al-Khaaliq",
+		"en": {
+			"meaning": "The Creator",
+			"description": "He is the one who creates from nothing, creating at the same time the states, conditions and sustenance of all that He has created. He establishes how, when and where creation will take place."
+		}
+	},
+	{
+		"number": "12",
+		"name": "اَلْبَارِئُ",
+		"transliteration": "Al-Baari",
+		"en": {
+			"meaning": "One who gives life",
+			"description": "He is the one who orders His creation with perfect harmony – not only each thing within itself, but everything in accordance with everything else."
+		}
+	},
+	{
+		"number": "13",
+		"name": "اَلْمُصَوِّرُ",
+		"transliteration": "Al-Musawwir",
+		"en": {
+			"meaning": "Fashioner of Shapes",
+			"description": "He is the one who, without using any model, shapes everything in the most perfect shape."
+		}
+	},
+	{
+		"number": "14",
+		"name": "اَلْغَفَّارُ",
+		"transliteration": "Al-Ghaffar",
+		"en": {
+			"meaning": "The Forgiving",
+			"description": "He is the One who accepts repentance and forgives."
+		}
+	},
+	{
+		"number": "15",
+		"name": "اَلْقَهَّارُ ",
+		"transliteration": "Al-Qahhaar",
+		"en": {
+			"meaning": "The Dominant",
+			"description": "He is the ever dominating One, who has surrounded all His creation from without and within with His irresistable power. Nothing can escape Him."
+		}
+	},
+	{
+		"number": "16",
+		"name": "اَلْوَهَّابُ",
+		"transliteration": "Al-Wahhab",
+		"en": {
+			"meaning": "The Giver of All",
+			"description": "He is the donor of all, without conditions, without limits without asking anyone benefit or return, giving everything to everyone, everywhere, always."
+		}
+	},
+	{
+		"number": "17",
+		"name": "اَلرَّزَّاقُ",
+		"transliteration": "Ar-Razzaaq",
+		"en": {
+			"meaning": "The Sustainer",
+			"description": "He is the Sustainer. Sustenance is needed to maintain the creation (both physical and spiritual sustenance)."
+		}
+	},
+	{
+		"number": "18",
+		"name": "اَلْفَتَّاحُ",
+		"transliteration": "Al-Fattaah",
+		"en": {
+			"meaning": "The Opener",
+			"description": "He is the Opener & the Solver, the Easer of all that is locked, tied and hardened."
+		}
+	},
+	{
+		"number": "19",
+		"name": "اَلْعَلِيْمُ",
+		"transliteration": "Al-Aleem",
+		"en": {
+			"meaning": "The Knower of All",
+			"description": "He is the One who knows all. He knows what has happened, what is happening, and what will happen from the beginning to the end."
+		}
+	},
+	{
+		"number": "20",
+		"name": "اَلْقَابِضُ",
+		"transliteration": "Al-Qaabid",
+		"en": {
+			"meaning": "The Constrictor",
+			"description": "He is the One who constricts. All existence is in the power of Allah. The life on this planet is a test for us, but Allah does not test his servants above their ability."
+		}
+	},
+	{
+		"number": "21",
+		"name": "اَلْبَاسِطُ",
+		"transliteration": "Al-Basit",
+		"en": {
+			"meaning": "The Reliever",
+			"description": "He is the one who releases abundance, joy, relief, and ease after difficulties. These are manifestations of His attribute Al-Baasit."
+		}
+	},
+	{
+		"number": "22",
+		"name": "اَلْخَافِضُ",
+		"transliteration": "Al-Khaafid",
+		"en": {
+			"meaning": "The Abaser",
+			"description": "Allah most high is the One who raises His creatures to honour and fame and who can cast them down to the lowest of the low."
+		}
+	},
+	{
+		"number": "23",
+		"name": "اَلرَّافِعُ",
+		"transliteration": "Ar-Raafi",
+		"en": {
+			"meaning": "The Exalter",
+			"description": "Allah most high is the One who raises His creatures to honour and fame and who can cast them down to the lowest of the low."
+		}
+	},
+	{
+		"number": "24",
+		"name": "اَلْمُعِزُّ",
+		"transliteration": "Al-Mu'izz",
+		"en": {
+			"meaning": "The Bestower of Honors",
+			"description": "He is the One who honours and the One who humiliates."
+		}
+	},
+	{
+		"number": "25",
+		"name": "اَلْمُذِلَّ",
+		"transliteration": "Al-Mudhill",
+		"en": {
+			"meaning": "The Humiliator",
+			"description": "He is the One who honours and the One who humiliates."
+		}
+	},
+	{
+		"number": "26",
+		"name": "اَلسَّمِيْعُ",
+		"transliteration": "As-Sami",
+		"en": {
+			"meaning": "The Hearer of All",
+			"description": "He is the one who hears all – that which comes from the lips, passes through the minds, is felt by the hearts, the rustling of leaves in the wind, the footsteps of ants and atoms moving through the void."
+		}
+	},
+	{
+		"number": "27",
+		"name": "اَلْبَصِيْرُ",
+		"transliteration": "Al-Baseer",
+		"en": {
+			"meaning": "The Seer of All",
+			"description": "He is the One who is all-seeing. He sees all that has passed, all there is, and all there will be until the end of time."
+		}
+	},
+	{
+		"number": "28",
+		"name": "اَلْحَكَمُ",
+		"transliteration": "Al-Hakam",
+		"en": {
+			"meaning": "Maker of Immutable Judgements",
+			"description": "He is the One who orders. He is the bringer of justice and truth. He judges, and executes His justice."
+		}
+	},
+	{
+		"number": "29",
+		"name": "اَلْعَدْلُ",
+		"transliteration": "Al-`Adl",
+		"en": {
+			"meaning": "The Equitable",
+			"description": "He is the absolute justice. Justice secures peace, balance order and harmony. Allah the just is the enemy of tyrants."
+		}
+	},
+	{
+		"number": "30",
+		"name": "اَللَّطِيْفُ",
+		"transliteration": "Al-Lateef",
+		"en": {
+			"meaning": "The Kind",
+			"description": "He is the most delicate, fine, gentle, beautiful one, He is the one who knows the finest details of beauty. The finest of His beauties are hidden in the secrets of the beauties of the soul, wisdom, and divine light."
+		}
+	},
+	{
+		"number": "31",
+		"name": "اَلْخَبِيْرُ",
+		"transliteration": "Al-Khabeer",
+		"en": {
+			"meaning": "The All-Aware",
+			"description": "He is the one who is aware of the hidden inner occurrences in everything. He is the one whose cognisance reaches the deepest, darkest, hidden corners of His kingdom, where neither human intelligence nor His angels can penetrate."
+		}
+	},
+	{
+		"number": "32",
+		"name": "اَلْحَلِيْمُ",
+		"transliteration": "Al-Haleem",
+		"en": {
+			"meaning": "The Forbearing",
+			"description": "He is forbearing in the punishment of the guilty. He waits, giving time to the sinner to realise his guilt and ask for forgiveness in order that He may forgive him rather than punish him."
+		}
+	},
+	{
+		"number": "33",
+		"name": "اَلْعَظِيْمُ",
+		"transliteration": "Al-Azeem",
+		"en": {
+			"meaning": "The Magnificent",
+			"description": "He is the greatest on the earth below and in the heavens above, in realms where our sight cannot reach and of which our minds cannot conceive. He is the absolute and perfect greatness."
+		}
+	},
+	{
+		"number": "34",
+		"name": "اَلْغَفُوْرُ",
+		"transliteration": "Al-Ghafur",
+		"en": {
+			"meaning": "The Forgiver",
+			"description": "He is the most forgiving one. He veils our faults from the eyes of other men, from the angels and relieves us from the suffering of continual remembrance of our faults."
+		}
+	},
+	{
+		"number": "35",
+		"name": "اَلشَّكُوْرُ",
+		"transliteration": "Ash-Shakoor",
+		"en": {
+			"meaning": "The Rewarder of Thankfulness",
+			"description": "He is the one who repays a good deed with a much greater reward. Thankfulness is to return good with good."
+		}
+	},
+	{
+		"number": "36",
+		"name": "اَلْعَلِيُّ",
+		"transliteration": "Al-Ali",
+		"en": {
+			"meaning": "The Highest",
+			"description": "He is the highest One. He is higher than the whole of the created universe. His nearness and farness and His being high cannot be measured by the limits of human intellect."
+		}
+	},
+	{
+		"number": "37",
+		"name": "اَلْخَبِيْرُ",
+		"transliteration": "Al-Kabeer",
+		"en": {
+			"meaning": "The Greatest",
+			"description": "He is the greatest, whose greatness stretches from before the beginning until after the end. There is no difference for Him between the creation of an atom and the infinite –seeming universe. This is His grandeur as much as we can understand it. He is greater than that."
+		}
+	},
+	{
+		"number": "38",
+		"name": "اَلْحَفِيْظُ",
+		"transliteration": "Al-Hafeez",
+		"en": {
+			"meaning": "The Preserver",
+			"description": "He is the one who remembers all that was and all that is, keeping in His divine protection all that there will be."
+		}
+	},
+	{
+		"number": "39",
+		"name": "اَلْمُقِيْتُ",
+		"transliteration": "Al-Muqit",
+		"en": {
+			"meaning": "The Nourisher",
+			"description": "He is the nourisher of all creation. Allah creates the nourishment of His creatures before He creates them. No one can take away the nourishment destined for each element of creation."
+		}
+	},
+	{
+		"number": "40",
+		"name": "اَلْحَسِيْبُ",
+		"transliteration": "Al-Haseeb",
+		"en": {
+			"meaning": "The Accounter",
+			"description": "He is the one who takes account of all and everything that His creation does or is subjected to."
+		}
+	},
+	{
+		"number": "41",
+		"name": "اَلْجَلِيْلُ",
+		"transliteration": "Al-Jaleel",
+		"en": {
+			"meaning": "The Mighty",
+			"description": "He is the lord of majesty and might. His might and His greatness, His eternity bears no resemblance to any energy, matter or time."
+		}
+	},
+	{
+		"number": "42",
+		"name": "اَلْكَرِيْمُ",
+		"transliteration": "Al-Kareem",
+		"en": {
+			"meaning": "The Generous",
+			"description": "He is the generous One. His greatest generosity is His Mercy, through which He forgives when He could punish."
+		}
+	},
+	{
+		"number": "43",
+		"name": "اَلرَّقِيْبُ",
+		"transliteration": "Ar-Raqeeb",
+		"en": {
+			"meaning": "The Watchful One",
+			"description": "He is the One who watches everything, always. This scrutiny of every detail in the existence of all creation is in part protective."
+		}
+	},
+	{
+		"number": "44",
+		"name": "اَلْمُجِيْبُ",
+		"transliteration": "Al-Mujeeb",
+		"en": {
+			"meaning": "The Responder to Prayer",
+			"description": "He is the one who responds to all the needs of His servants. Allah is closer to His creatures than they are to themselves. He is not any closer to a saint than He is to you or a mustard seed."
+		}
+	},
+	{
+		"number": "45",
+		"name": "اَلْوَاسِعُ",
+		"transliteration": "Al-Waasi",
+		"en": {
+			"meaning": "The All-Comprehending",
+			"description": "He is the limitless vastness, whose knowledge, mercy, power, generosity and all other beautiful attributes are infinite."
+		}
+	},
+	{
+		"number": "46",
+		"name": "اَلْحَكِيْمُ",
+		"transliteration": "Al-Hakeem",
+		"en": {
+			"meaning": "The Perfectly Wise",
+			"description": "He is the perfectly wise, in His knowledge and in His deeds. There is no doubt or uncertainty in His knowledge, nor does it have an end."
+		}
+	},
+	{
+		"number": "47",
+		"name": "اَلْوَدُودُ",
+		"transliteration": "Al-Wadud",
+		"en": {
+			"meaning": "The Loving One",
+			"description": "He is the one who loves His good servants. He is the only one who is worthy of love."
+		}
+	},
+	{
+		"number": "48",
+		"name": "اَلْمَجِيْدُ",
+		"transliteration": "Al-Majeed",
+		"en": {
+			"meaning": "The Majestic One",
+			"description": "Allah most high is glorious and majestic in the whole of His creation and beyond. No hand reaches Him, no power can touch Him, yet He is closer to His servants than their own souls. His state is pure perfection. His acts are pure wisdom."
+		}
+	},
+	{
+		"number": "49",
+		"name": "اَلْبَاعِثُ",
+		"transliteration": "Al-Baa'ith",
+		"en": {
+			"meaning": "The Resurrector",
+			"description": "He is the raiser from the dead. Allah will give life back to all creation on the day of judgement."
+		}
+	},
+	{
+		"number": "50",
+		"name": "اَلشَّهِيدُ",
+		"transliteration": "Ash-Shaheed",
+		"en": {
+			"meaning": "The Witness",
+			"description": "He is the one who witnesses all that happens everywhere at all times."
+		}
+	},
+	{
+		"number": "51",
+		"name": "اَلْحَقُّ",
+		"transliteration": "Al-Haqq",
+		"en": {
+			"meaning": "The Truth",
+			"description": "Allah is the truth, whose being is ever unchanged."
+		}
+	},
+	{
+		"number": "52",
+		"name": "اَلْوَكِيلُ",
+		"transliteration": "Al-Wakeel",
+		"en": {
+			"meaning": "The Trustee",
+			"description": "Allah is the ultimate and faithful trustee. Men think that they are able to do, but He is the one who does everything. He can replace everything in the universe, but nothing can replace Him nor can stand on its own without being dependent on Him."
+		}
+	},
+	{
+		"number": "53",
+		"name": "اَلْقَوِيُّ",
+		"transliteration": "Al-Qawi",
+		"en": {
+			"meaning": "Almighty",
+			"description": "Allah is the most strong one, the inexhaustible. He possesses all strength. He can create a billion universes with the same ease with which He creates a blade of grass."
+		}
+	},
+	{
+		"number": "54",
+		"name": "اَلْمَتِينُ",
+		"transliteration": "Al-Mateen",
+		"en": {
+			"meaning": "The Forceful One",
+			"description": "Allah is perfect in His strength and His firmness. None can be saved from this strength, no force can oppose it and nothing can weaken it."
+		}
+	},
+	{
+		"number": "55",
+		"name": "اَلْوَلِيُّ",
+		"transliteration": "Al-Wali",
+		"en": {
+			"meaning": "The Governor",
+			"description": "Allah is the protecting friend of His good servants. He eliminates their difficulties and gives them guidance, peace and success in their affairs in this world and in the hereafter."
+		}
+	},
+	{
+		"number": "56",
+		"name": "اَلْحَمِيدُ",
+		"transliteration": "Al-Hameed",
+		"en": {
+			"meaning": "The Praised One",
+			"description": "Allah is most praiseworthy, all that exist praise Allah with their tongues, with their action, or simply by their very existence. He is the only one who is worthy of devotion, respect, thankfulness and praise."
+		}
+	},
+	{
+		"number": "57",
+		"name": "اَلْمُحْصِي",
+		"transliteration": "Al-Muhsi",
+		"en": {
+			"meaning": "The Appraiser",
+			"description": "Allah is the possessor of all quantitative knowledge. He sees and knows everything in its reality. He knows the number of all existence in the universe down to the number of breaths exhaled and inhaled by each of His creatures."
+		}
+	},
+	{
+		"number": "58",
+		"name": "اَلْمُبْدِئُ",
+		"transliteration": "Al-Mubdi",
+		"en": {
+			"meaning": "The Originator",
+			"description": "Allah is the originator of all. He creates without model or material."
+		}
+	},
+	{
+		"number": "59",
+		"name": "اَلْمُعِيدُ",
+		"transliteration": "Al-Mu'eed",
+		"en": {
+			"meaning": "The Restorer",
+			"description": "Allah is the restorer of the things that He has created and destroyed."
+		}
+	},
+	{
+		"number": "60",
+		"name": "اَلْمُحْيِي",
+		"transliteration": "Al-Muhyi",
+		"en": {
+			"meaning": "The Giver of Life",
+			"description": "Allah is the giver of life to things without life. Allah is the one who has created life and who has created death, no one else can do that."
+		}
+	},
+	{
+		"number": "61",
+		"name": "اَلْمُمِيتُ",
+		"transliteration": "Al-Mumeet",
+		"en": {
+			"meaning": "The Taker of Life",
+			"description": "Allah is the creator of death. All who are alive will certainly die. Man is made of a combination of the flesh and the soul. The body is temporal, the soul is eternal."
+		}
+	},
+	{
+		"number": "62",
+		"name": "اَلْقَيُّومُ",
+		"transliteration": "Al-Haiy",
+		"en": {
+			"meaning": "The Ever Living One",
+			"description": "Allah is the perfectly alive and ever living one. Allah is cognizant of all, and all actions are His. All that is known and will be known is within His knowledge. All existence is always comprehended in His action."
+		}
+	},
+	{
+		"number": "63",
+		"name": "اَلْوَاجِدُ",
+		"transliteration": "Al-Qayyum",
+		"en": {
+			"meaning": "The Self-Existing One",
+			"description": "Allah is the ever self-existing one upon whom the existence of all depends. His existence depends upon none other than Himself."
+		}
+	},
+	{
+		"number": "64",
+		"name": "اَلْوَاجِدُ",
+		"transliteration": "Al-Waajid",
+		"en": {
+			"meaning": "The Finder",
+			"description": "Allah finds and obtains whatever He wishes whenever He wishes. It is even superfluous to use the word \"FIND\" because all is in His presence at all times."
+		}
+	},
+	{
+		"number": "65",
+		"name": "اَلْمَاجِدُ",
+		"transliteration": "Al-Maajid",
+		"en": {
+			"meaning": "The Glorious",
+			"description": "Allah is the most glorious, who shows infinite generosity and munificence to those close to Him."
+		}
+	},
+	{
+		"number": "66",
+		"name": "اَلْوَاحِدُ",
+		"transliteration": "Al-Waahid",
+		"en": {
+			"meaning": "The Indivisible",
+			"description": "Allah is one. He has no equal, none like Him nor any partner in His essence, in His attributes, in His actions, in His orders, or in His beautiful Names."
+		}
+	},
+	{
+		"number": "67",
+		"name": "اَلأَحَدُ",
+		"transliteration": "Al-Ahad",
+		"en": {
+			"meaning": "The One Unequalled",
+			"description": "He is the unity in which all names, attributes and their relations to any and all are united."
+		}
+	},
+	{
+		"number": "68",
+		"name": "اَلصَّمَدُ",
+		"transliteration": "As-Samad",
+		"en": {
+			"meaning": "The Satisfier of All Needs",
+			"description": "Allah is the satisfier of all needs, and all is in need of Him. He is the sole recourse; the only place of support where one may go to rid oneself of all trouble and to receive all that one needs through the blessings of this name."
+		}
+	},
+	{
+		"number": "69",
+		"name": "اَلْقَادِرُ",
+		"transliteration": "Al-Qaadir",
+		"en": {
+			"meaning": "The All Powerful",
+			"description": "Allah is the all-powerful who does what He wills the way He wills. He created the universe by Himself, from nothing, with neither materials nor model. He said “be” and it became."
+		}
+	},
+	{
+		"number": "70",
+		"name": "اَلْمُقْتَدِرُ",
+		"transliteration": "Al-Muqtadir",
+		"en": {
+			"meaning": "Powerful",
+			"description": "Allah is the one who creates all power and has total control over all power. Allah bestows power upon things on earth and in heaven, and uses them in accordance with His all-pervasive wisdom and will."
+		}
+	},
+	{
+		"number": "71",
+		"name": "اَلْمُقَدِّمُ",
+		"transliteration": "Al-Muqaddim",
+		"en": {
+			"meaning": "The Expediter",
+			"description": "Allah brings forward whomever He wills. Allah advances the chosen among His creation, bringing some above and ahead of others."
+		}
+	},
+	{
+		"number": "72",
+		"name": "اَلْمُؤَخِّرُ",
+		"transliteration": "Al-Mu'akhkhir",
+		"en": {
+			"meaning": "The Delayer",
+			"description": "Allah is He who leaves whomever He wills behind, and delays advancement."
+		}
+	},
+	{
+		"number": "73",
+		"name": "اَلأَوَّل",
+		"transliteration": "Al-Awwal",
+		"en": {
+			"meaning": "The First",
+			"description": "Allah is the first. There is none like Him. His firstness means that there is none prior to Him, that He is self-existent, that all comes from Him and that He is the cause of all that became."
+		}
+	},
+	{
+		"number": "74",
+		"name": "اَلآخِرُ",
+		"transliteration": "Al-Aakhir",
+		"en": {
+			"meaning": "The Last",
+			"description": "Allah is the last. As He has no beginning, He has no end. He is eternal. He is the last in the sense that the circle of existence begins and ends with Him."
+		}
+	},
+	{
+		"number": "75",
+		"name": "اَلظَّاهِرُ",
+		"transliteration": "Az-Zaahir",
+		"en": {
+			"meaning": "The Obvious",
+			"description": "Allah is the manifest one. Allah most high is hidden from those who seek to see by means of their senses, but He is apparent to those ho seek to know Him by the wisdom and reason that Allah has bestowed upon them."
+		}
+	},
+	{
+		"number": "76",
+		"name": "اَلْبَاطِنُ",
+		"transliteration": "Al-Baatin",
+		"en": {
+			"meaning": "The Hidden One",
+			"description": "Allah is the hidden one. His existence is both manifest and hidden. To truly know the creator is not possible because the knowledge, the mind the understanding of the created one are limited."
+		}
+	},
+	{
+		"number": "77",
+		"name": "اَلْوَالِي",
+		"transliteration": "Al-Waali",
+		"en": {
+			"meaning": "The Protecting Friend",
+			"description": "Allah is the sole manager and governor of the whole creation."
+		}
+	},
+	{
+		"number": "78",
+		"name": "اَلْمُتَعَالِي",
+		"transliteration": "Al-Muta'ali",
+		"en": {
+			"meaning": "The Supreme One",
+			"description": "Allah is the Supreme One. His greatness grows. As He gives from His inexhaustible treasures, His riches increase. As the needs of His creation increase, His bounties increase."
+		}
+	},
+	{
+		"number": "79",
+		"name": "اَلْبَرُّ",
+		"transliteration": "Al-Barr",
+		"en": {
+			"meaning": "The Doer of Good",
+			"description": "Allah is the perfect doe of good. All good and bounty come from Him. He loves for His servants only good, comfort and ease."
+		}
+	},
+	{
+		"number": "80",
+		"name": "اَلتَّوَابُ",
+		"transliteration": "At-Tawwaab",
+		"en": {
+			"meaning": "The Guide to Repentance",
+			"description": "Allah is He who constantly turns man to repentance."
+		}
+	},
+	{
+		"number": "81",
+		"name": "اَلْمُنْتَقِمُ",
+		"transliteration": "Al-Muntaqim",
+		"en": {
+			"meaning": "The Avenger",
+			"description": "Allah is the great avenger. Allah punishes those who persist in revolting, raving in their unconsciousness and egotism, creating disharmony, tyrannising Allah’s servants and His creation."
+		}
+	},
+	{
+		"number": "82",
+		"name": "اَلْعَفُوُّ",
+		"transliteration": "Al-'Afuww",
+		"en": {
+			"meaning": "The Forgiver",
+			"description": "Allah is the forgiver, the eliminator of sins. He does not often punish the ones who deny, the ones who revolt. He accepts their recognition of their sins as repentance. He erases their sins."
+		}
+	},
+	{
+		"number": "83",
+		"name": "اَلرَّؤُوفُ",
+		"transliteration": "Ar-Raauf",
+		"en": {
+			"meaning": "The Clement",
+			"description": "Allah is all clement. In spite of His ability to see our sins, of His being just, of His being able to punish, the fact that He chooses to forgive proves His infinite mercy and clemency."
+		}
+	},
+	{
+		"number": "84",
+		"name": "مَالِكُ الْمُلْكِ",
+		"transliteration": "Malik-al-Mulk",
+		"en": {
+			"meaning": "The Owner of All",
+			"description": "Allah is the eternal owner of His kingdom. He shares neither the ownership nor the power, government or guardianship of the universe with anyone."
+		}
+	},
+	{
+		"number": "85",
+		"name": "ذُو الْجَلاَلِ وَالإِكْرَامِ",
+		"transliteration": "Zul-Jalaal-e wal-Ikraam",
+		"en": {
+			"meaning": "Majestic and Benevolent",
+			"description": "Allah is the Lord of Majesty and bounty. There is no perfection that does not belong to Him nor any blessing or honor that comes from other than Him. Allah is the owner of all majesty."
+		}
+	},
+	{
+		"number": "86",
+		"name": "اَلْمُقْسِطُ",
+		"transliteration": "Al-Muqsit",
+		"en": {
+			"meaning": "The Equitable One",
+			"description": "Allah is the one who acts and distributes in justice and fairness. How harmonious and balanced is the creation: all the beauties in heaven and earth-mountains, seas, sunsets, flowers – and also the eyes to see."
+		}
+	},
+	{
+		"number": "87",
+		"name": "اَلْجَامِعُ",
+		"transliteration": "Al-Jaami",
+		"en": {
+			"meaning": "The Gatherer",
+			"description": "Allah is the gatherer of whatever He wishes, wherever He wishes. Allah has gathered together within this universe spaces, galaxies-stars, earths, seas, plants and animals, things whose nature, size, shape and colour are different."
+		}
+	},
+	{
+		"number": "88",
+		"name": "اَلْغَنِيُّ",
+		"transliteration": "Al-Ghani",
+		"en": {
+			"meaning": "The Rich One",
+			"description": "Allah is the rich one who is self sufficient. His essence and attributes have no relationship to anything else. Someone whose existence and perfection depend on another needs to earn that existence. Only Allah needs not, neither does He need to earn."
+		}
+	},
+	{
+		"number": "89",
+		"name": "اَلْمُغْنِي",
+		"transliteration": "Al-Mughni",
+		"en": {
+			"meaning": "The Enricher",
+			"description": "Allah is the enricher. He renders whomever He wishes rich and whomever He wishes poor."
+		}
+	},
+	{
+		"number": "90",
+		"name": "اَلْمَانِعُ",
+		"transliteration": "Al-Mani",
+		"en": {
+			"meaning": "The Hinderer",
+			"description": "Allah is the one who averts harm from His creation."
+		}
+	},
+	{
+		"number": "91",
+		"name": "اَلضَّارُّ",
+		"transliteration": "Ad-Daar",
+		"en": {
+			"meaning": "The Creator of The Harmful",
+			"description": "Allah is the creator of the harmful and evil as He is the creator of the good and beneficial. Ha has also taught us to opt for the good and escape the evil. Ha has given us power of discrimination, given us a will and freedom to choose."
+		}
+	},
+	{
+		"number": "92",
+		"name": "اَلنَّافِعُ",
+		"transliteration": "An-Naafi",
+		"en": {
+			"meaning": "The Creator of Good",
+			"description": "Allah is the creator of good. Allah has created man as the best of his creation and He has bestowed upon him gifts which render him unique and superior to the rest of creation."
+		}
+	},
+	{
+		"number": "93",
+		"name": "اَلنُّورُ",
+		"transliteration": "An-Nur",
+		"en": {
+			"meaning": "The Light",
+			"description": "Allah is the light that is shed upon the whole creation, making it apparent. That light is the light that brought existence out of the darkness of non-existence."
+		}
+	},
+	{
+		"number": "94",
+		"name": "اَلْهَادِي",
+		"transliteration": "Al-Haadi",
+		"en": {
+			"meaning": "The Guide",
+			"description": "Allah is the one who creates guidance, leading his servants to good, benficence and the satisfaction of their needs."
+		}
+	},
+	{
+		"number": "95",
+		"name": "اَلْبَدِيعُ",
+		"transliteration": "Al-Badee'u",
+		"en": {
+			"meaning": "The Originator",
+			"description": "Allah is the Originator of the creation, having created it without model or material. He does not need previous knowledge to think, to first investigate, to figure things out. Everything He creates is a wonder since He originated it from nothing."
+		}
+	},
+	{
+		"number": "96",
+		"name": "اَلْبَاقِي",
+		"transliteration": "Al-Baaqi",
+		"en": {
+			"meaning": "The Everlasting One",
+			"description": "Allah is the everlasting one whose existence in the future is forever. He has neither beginning nor end. The creation will end, and time with it. But Allah the everlasting one will still exist."
+		}
+	},
+	{
+		"number": "97",
+		"name": "اَلْوَارِثُ",
+		"transliteration": "Al-Waaris",
+		"en": {
+			"meaning": "The Inheritor of All",
+			"description": "Allah is the ultimate inheritor, to whom everything is left after its temporal possessors are gone. It is He who exists after all existence disappears, it is He to whom all existence returns."
+		}
+	},
+	{
+		"number": "98",
+		"name": "اَلرَّشِيدُ",
+		"transliteration": "Ar-Rashid",
+		"en": {
+			"meaning": "The Righteous Teacher",
+			"description": "Allah is the righteous teacher who ordains righteousness for all creatures. In His wisdom He leads all matters to their finality in a perfect way and order."
+		}
+	},
+	{
+		"number": "99",
+		"name": "اَلصَّبُورُ",
+		"transliteration": "As-Sabur",
+		"en": {
+			"meaning": "The Patient One",
+			"description": "Allah is the most patient one. In His creation as in His actions, in His dealings with His creation, nothing is either bigger or smaller, better or worse, earlier or later than is determined for it to be."
+		}
+	}
+]
