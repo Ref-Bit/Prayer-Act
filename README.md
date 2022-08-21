@@ -2,6 +2,7 @@
 A web app to show both Gregorian and Hijri calenders, Prayer Times and Asmaa Al-Husna (Names of Allah).
 
 ***
+![Showcase](./public/showcase.png)
 
 #### Built With
 
